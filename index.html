@@ -9,65 +9,61 @@
 </head>
 
 <body>
-    <!-- header Has 2 Nav Bar -->
-    <header>
-        <nav class="navbar">
-          <div class="navbar-left">
-            <div class="logo">
-              <a href="#">
-                <img src="images/AR-DESIGN-Logo.png" width="100" height="100" alt="E-commerce Clothing Shop Logo" />
-              </a>
+    <!-- header Has 1 Nav Bar   -->
+    <header class="header-area">
+        <!-- navbar has 3 parts :logo, main menu and user part -->
+        <header role="navigation">
+            <nav>
+                <div class="container">
+                <!-----logo----->
+                    <div class="logo>"
+                        <a href="#home">
+                            <img class="logo" src="images/main-logo.png" width="100" height="100" alt="E-commerce Clothing Shop Logo" />
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#home" aria-label="Home">Home</a></li>
+                            <li>
+                             <a href="#" aria-label="Products">Products</a>
+                                <ul>
+                                    <li><a href="#product.html">Collection</a></li>
+                                    <li><a href="#product.html">Accessories</a></li>
+                                    <li><a href="#product.html">Shoes</a></li>
+                                    <li><a href="#product.html">Dresses</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" aria-label="New Arrival">New Arrival</a></li>
+                            <li><a href="#" aria-label="Best sellers">Best sellers</a></li>
+                            <li><a href="#about" aria-label="About Us">About Us</a></li>
+                            <li><a href="#contact" aria-label="Contact Us">Contact Us</a></li>
+                        </ul>
+                  </div>
+                <div class="user">
+                    <ul>
+                        <li> <a href="#user"><img src="images/user.svg" alt="user icon"></a></li>
+                        <li> <a href="#search"><img src="images/search.svg" alt="Search"> </a></li>
+                        <li><a href="#bag"><img src="images/bag.svg"  alt="shopping bag"></a></li>
+                   </ul>
+                </div>
             </div>
-           
-          </div>
-          <div class="navbar-right">
-            <div class="search">
-                <label for="search-input"></label>
-                <input type="text" id="search-input" placeholder="Search..." />
-                <button type="submit">Go</button>
-              </div>
-            <a href="#">Join/Login</a>
-            <a href="#">Cart</a>
-          </div>
         </nav>
-        <nav class="navbar">
-          <ul class="item-list">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#">New Arrival</a></li>
-            <li><a href="#">Best sellers</a></li>
-            <li><a href="#">Clothing</a></li>
-            <li><a href="#">Dresses</a></li>
-            <li><a href="#">Accessories</a></li>
-            <li><a href="#">Collection</a></li>
-            <li><a href="#">Sale</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-          </ul>
-        </nav>
-        <picture>
-            <source media="(min-width: 961px)"
-                    srcset="images/banner-960_x_640.jpg 1x,
-                            images/banner-1920_x_1280.jpg 2x,
-                            images/banner-2880_x_1920.jpg 3x" />
-            <source media="(min-width: 641px)"
-                    srcset="images/banner-640_x426.jpg 1x,
-                            images/banner-1280_x_853.jpg 2x,
-                            images/banner-1920_x_1280.jpg 3x" />
-            <source media="(min-width: 481px)"
-                    srcset="images/banner-480_x_320.jpg 1x,
-                            images/banner-960_x_640.jpg 2x,
-                            images/banner-1440_x_960.jpg 3x" />
-            <source media="(max-width: 480px)"
-                    srcset="images/banner-320_x_213.jpg 1x,
-                            images/banner-480_x_320.jpg 2x,
-                            images/banner-960_x_640.jpg 3x" />
-            <img src="images/banner.jpg"
-                 alt="Banner Image" />
-          </picture>
-       
       </header>
-      
-      <main>
+ <!---- Banner section------>
+           <section class="banner">
+                   <div class="container">
+                     <div class="ad-text">
+                        <div class="banner-content">
+                            <h1>New Arrival</h1>
+                            <a href="#" class="btn-discover">view collection</a>
+                         </div>
+                            <div class="dot"></div>
+                     </div>
+                </div>
+            </div>
+    </section>
+ <!---- END Banner section------>
+ <!-- Product section -->
         <section class="product">
           <img src="product1.jpg" alt="Product 1" />
           <h2>Product 1</h2>
@@ -86,7 +82,7 @@
           <p>$100.00</p>
           <button>Shop</button>
         </section>
-      </main>
+      
       <footer>
         <div class="footer-container">
           <div class="footer-column">
